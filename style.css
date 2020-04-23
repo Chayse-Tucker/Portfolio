@@ -6,7 +6,17 @@ body{
 
 header{
     background: rgb(0, 0, 0);
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px 16px;
+    color: #ffffff;
+    text-align: center;
+}
 
+footer{
+    background: rgb(0, 0, 0);
     width: 100%;
     height: 60px;
     font-size: 40px;
@@ -84,13 +94,12 @@ ul li a:hover {
 }
 
 @keyframes heading {
-    0% { bottom: 0px; right: 0px }
-    50% { bottom: -60px; right: -100px }
-    100% {top: 200px; right: 300px}
+    0% { bottom: 0px; }
+    100% {top: 200px;}
 }
 
 #container div p {
-    padding-left: 150px;
+    padding-left: 170px;
     padding-right: 50px;
     font-size: 30px;
     position: relative;
@@ -122,8 +131,8 @@ ul li a:hover {
 
 
 @keyframes info {
-    0% { left: -10000px; top: 300px }
-    100% {left: 0; top: 450px}
+    0% { left: -10000px; top: 0px }
+    100% {left: 0; top: 50px}
 }
 
 .theatre {
