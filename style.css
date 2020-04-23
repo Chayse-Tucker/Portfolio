@@ -6,7 +6,7 @@ body{
 
 header{
     background: rgb(0, 0, 0);
-    position: fixed;
+
     width: 100%;
     height: 60px;
     font-size: 40px;
@@ -14,7 +14,6 @@ header{
     padding: 10px 16px;
     color: #ffffff;
     text-align: center;
-    z-index: 1;
 }
 
 ul{
@@ -56,7 +55,7 @@ ul li a{
 
 
 ul li a:hover {
-    background:yellow;
+    background:green;
     color: white;
 }
 
@@ -75,39 +74,62 @@ ul li a:hover {
 #container div h1{
     position: absolute;
     top: 50%;
-    transform: translateY(-50);
     width: 100%;
     margin: 0;
     padding: 0;
-    font-size: 8em;
+    font-size: 175px;
     text-transform: uppercase;
-    animation: test 3s 1;
-    animation-iteration-count: infinite;
+    animation: heading 3s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% { bottom: 0px; right: 0px }
+    50% { bottom: -60px; right: -100px }
+    100% {top: 200px; right: 300px}
+}
+
+#container div p {
+    padding-left: 150px;
+    padding-right: 50px;
+    font-size: 30px;
+    position: relative;
+    animation-name: body;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;                  
+}
+
+@keyframes body {
+    0% { left: -10000px; top: 300px }
+    100% {left: 0; top: 450px}
+}
+
+.scouts {
+    background: url('images/scouts.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+}
+
+.lifeguard {
+    background: url('images/lifeguard.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
 }
 
 
-@keyframes test {
-    0%{
-        color: black;
-        margin-bottom: -40px;
-    }
 
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
+@keyframes info {
+    0% { left: -10000px; top: 300px }
+    100% {left: 0; top: 450px}
 }
 
-#container div#filler{
-    background: yellow;
+.theatre {
+    background: url('images/theatre.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
 }
 
-#container div#fillers{
-    position: fixed;
-    background-image: url(/images/boyscouts.jpg);
-    z-index: -1;
-}
