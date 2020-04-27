@@ -139,7 +139,7 @@ ul li a:hover {
 }
 
 .scouts {
-    background: url('images/scouts.jpg') no-repeat center;
+    background: url('images/scouts.png') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
@@ -166,4 +166,6 @@ ul li a:hover {
     background-attachment: fixed;
     height: 500px;
 }
+
+
 
